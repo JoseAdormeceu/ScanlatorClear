@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexusToons Clean</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { width: 240px; margin: 0; padding: 16px; background: #111827; color: #f9fafb; }
+    h1 { font-size: 18px; margin: 0 0 12px; }
+    .status { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; color: #d1d5db; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #ef4444; }
+    .dot.on { background: #22c55e; }
+    button { width: 100%; border: 0; border-radius: 10px; padding: 10px 12px; margin: 6px 0; cursor: pointer; font-weight: 700; color: #111827; background: #e5e7eb; }
+    button.primary { background: #38bdf8; }
+    label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; color: #d1d5db; }
+    input[type="checkbox"] { width: 18px; height: 18px; accent-color: #38bdf8; }
+    .note { margin-top: 12px; font-size: 12px; line-height: 1.4; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <h1>NexusToons Clean</h1>
+  <div class="status"><span id="dot" class="dot"></span><span>Cleaner: <strong id="stateText">OFF</strong></span></div>
+  <button id="toggle" class="primary" type="button">ON / OFF</button>
+  <button id="apply" type="button">Apply</button>
+  <label for="debug">Debug mode <input id="debug" type="checkbox"></label>
+  <p class="note">Atua apenas em nexustoons.com. Recarrega a página se o Brave ainda não tiver injetado o content script.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
