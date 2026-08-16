@@ -1,0 +1,10 @@
+/* NexusToons Clean only toggles these classes from content.js after safety checks. */
+html.nexus-clean-enabled .nexus-clean-hidden {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html.nexus-clean-enabled .nexus-clean-overlay-unlocked {
+  overflow: auto !important;
+}
